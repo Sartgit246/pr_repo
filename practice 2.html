@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateform(){
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var pass = document.getElementById("pass").value;
+            var email = document.getElementById("email").value;
+            var mobile = document.getElementById("mobile").value;
+            var address = document.getElementById("address").value;
+        }
+
+    </script>
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form onsubmit="return validateform()">
+        First Name : <input type="text" id="fname"><br><br>
+        Last Name : <input type="text" id="lname"><br><br>
+        Password : <input type="password" id="pass"><br><br>
+        Email : <input type="text" id="email"><br><br>
+        Mobile : <input type="text" id="mobile"><br><br>
+        Address : <textarea  id="address"></textarea><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
